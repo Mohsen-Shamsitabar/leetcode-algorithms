@@ -1,6 +1,8 @@
 export { default as binarySearch } from "./binary-search";
 export { default as binaryToInteger } from "./binary-to-integer";
 export { default as clamp } from "./clamp";
+export { default as countPossibilities } from "./count-possibilites-of-picking-n-elements-from-m-element";
+export { default as factorial } from "./factorial";
 export { default as integerToBinary } from "./integer-to-binary";
 export { default as mergeSort } from "./merge-sort";
 export { default as quickSort } from "./quick-sort";
