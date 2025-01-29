@@ -28,7 +28,7 @@ const swap = (nums: number[], head: number, tail: number) => {
   }
 };
 
-const secondApprouch = (nums: number[], k: number) => {
+const secondApproach = (nums: number[], k: number) => {
   const N = nums.length;
   const K = k % N;
   const B = N - K - 1;
@@ -38,4 +38,4 @@ const secondApprouch = (nums: number[], k: number) => {
   swap(nums, 0, N - 1);
 };
 
-export default secondApprouch;
+export default secondApproach;
