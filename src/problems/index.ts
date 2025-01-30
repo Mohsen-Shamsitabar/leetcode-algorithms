@@ -4,6 +4,7 @@ export { default as countNumberOfConsistentStrings } from "./count-number-of-con
 export { default as createCounter } from "./create-counter";
 export { default as ParkingSystem } from "./design-parking-system";
 export { default as differenceOfSums } from "./divisible-non-divisible-sums-diff";
+export { default as findWordsContaining } from "./find-words-containing";
 export { default as numberOfGoodPairs } from "./number-of-good-pairs";
 export { default as removeDuplicatesFromSortedArrayII } from "./remove-duplicates-from-sorted-array-2";
 export { default as romanToInteger } from "./roman-to-integer";
