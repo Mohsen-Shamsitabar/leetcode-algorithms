@@ -1,7 +1,8 @@
 export { default as addBinary } from "./add-binary";
+export { default as TimeLimitedCache } from "./cache-with-time-limit";
 export { default as countNumberOfConsistentStrings } from "./count-number-of-consistent-strings";
 export { default as createCounter } from "./create-counter";
-export { default as designParkingSystem } from "./design-parking-system";
+export { default as ParkingSystem } from "./design-parking-system";
 export { default as numberOfGoodPairs } from "./number-of-good-pairs";
 export { default as removeDuplicatesFromSortedArrayII } from "./remove-duplicates-from-sorted-array-2";
 export { default as romanToInteger } from "./roman-to-integer";
