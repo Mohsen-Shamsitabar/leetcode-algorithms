@@ -1,4 +1,1 @@
-export {
-  default,
-  type ListNode as PairSumListNode
-} from "./maxTwinsumOfLinkedList";
+export { default } from "./maxTwinsumOfLinkedList";
