@@ -1,4 +1,1 @@
-export {
-  default,
-  type ListNode as MergeSortedListsNode
-} from "./mergeTwoSortedLists";
+export { default } from "./mergeTwoSortedLists";

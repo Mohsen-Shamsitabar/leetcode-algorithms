@@ -1,1 +1,1 @@
-export { default, type TreeNode as MergeBinaryTree } from "./mergeBinaryTrees";
+export { default } from "./mergeBinaryTrees";

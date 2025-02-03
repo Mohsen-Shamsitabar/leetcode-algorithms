@@ -1,12 +1,4 @@
-export class ListNode {
-  val: number;
-  next: ListNode | null;
-
-  constructor(val?: number, next?: ListNode | null) {
-    this.val = !val ? 0 : val;
-    this.next = !next ? null : next;
-  }
-}
+import type { ListNode } from "../../types";
 
 const pairSum = (head: ListNode | null): number => {
   const values: ListNode["val"][] = [];
