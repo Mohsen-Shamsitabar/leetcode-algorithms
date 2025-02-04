@@ -1,4 +1,5 @@
 export { default as addBinary } from "./add-binary";
+export { default as inorderTraversal } from "./binary-tree-inorder-traversal";
 export { default as TimeLimitedCache } from "./cache-with-time-limit";
 export { default as countNumberOfConsistentStrings } from "./count-number-of-consistent-strings";
 export { default as createCounter } from "./create-counter";
