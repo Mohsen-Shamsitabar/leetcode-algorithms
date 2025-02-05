@@ -18,6 +18,7 @@ export { default as removeStars } from "./removing-stars-from-string";
 export { default as reverseLinkedList } from "./reverse-linked-list";
 export { default as romanToInteger } from "./roman-to-integer";
 export { default as rotateArray } from "./rotate-array";
+export { default as rotateImage } from "./rotate-image-inplace";
 export { default as subsets } from "./subsets";
 export { default as twoSum } from "./two-sum";
 export { default as validParentheses } from "./valid-parentheses";
