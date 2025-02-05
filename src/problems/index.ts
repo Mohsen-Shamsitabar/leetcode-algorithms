@@ -14,6 +14,7 @@ export { default as mergeTwoLists } from "./merge-two-sorted-lists";
 export { default as numberOfGoodPairs } from "./number-of-good-pairs";
 export { default as permute } from "./permutations";
 export { default as removeDuplicatesFromSortedArrayII } from "./remove-duplicates-from-sorted-array-2";
+export { default as removeStars } from "./removing-stars-from-string";
 export { default as reverseLinkedList } from "./reverse-linked-list";
 export { default as romanToInteger } from "./roman-to-integer";
 export { default as rotateArray } from "./rotate-array";
