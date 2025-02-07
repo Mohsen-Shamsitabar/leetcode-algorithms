@@ -17,14 +17,15 @@ const merge = <T>(left: T[], right: T[]): T[] => {
  * **Space Complexity:** *`O(n)`* + space for temporary array used during merging.
  */
 const mergeSort = <T>(array: T[]): T[] => {
-  const half = array.length / 2;
+  const fetchedArray = [...array];
+  const half = fetchedArray.length / 2;
 
-  if (array.length < 2) {
-    return array;
+  if (fetchedArray.length < 2) {
+    return fetchedArray;
   }
 
-  const left = array.splice(0, half);
-  return merge(mergeSort(left), mergeSort(array));
+  const left = fetchedArray.splice(0, half);
+  return merge(mergeSort(left), mergeSort(fetchedArray));
 };
 
 export default mergeSort;
