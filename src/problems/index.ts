@@ -2,6 +2,7 @@ export { default as addBinary } from "./add-binary";
 export { default as inorderTraversal } from "./binary-tree-inorder-traversal";
 export { default as TimeLimitedCache } from "./cache-with-time-limit";
 export { default as combinationSum } from "./combination-sum";
+export { default as goodNodes } from "./count-good-nodes-in-tree";
 export { default as countNumberOfConsistentStrings } from "./count-number-of-consistent-strings";
 export { default as createCounter } from "./create-counter";
 export { default as ParkingSystem } from "./design-parking-system";
