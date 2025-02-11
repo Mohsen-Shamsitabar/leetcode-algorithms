@@ -16,6 +16,7 @@ export { default as maxTwinsumOfLinkedList } from "./max-twinsum-of-linked-list"
 export { default as mergeBinaryTrees } from "./merge-binary-trees";
 export { default as mergeTwoLists } from "./merge-two-sorted-lists";
 export { default as numberOfGoodPairs } from "./number-of-good-pairs";
+export { default as partition } from "./palindrome-partitioning";
 export { default as permute } from "./permutations";
 export { default as removeDuplicatesFromSortedArrayII } from "./remove-duplicates-from-sorted-array-2";
 export { default as removeStars } from "./removing-stars-from-string";
