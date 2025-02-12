@@ -9,6 +9,7 @@ export { default as ParkingSystem } from "./design-parking-system";
 export { default as differenceOfSums } from "./divisible-non-divisible-sums-diff";
 export { default as findWordsContaining } from "./find-words-containing";
 export { default as generateParenthesis } from "./generate-parentheses";
+export { default as groupAnagrams } from "./group-anagrams";
 export { default as invertTree } from "./invert-binary-tree";
 export { default as canVisitAllRooms } from "./keys-and-rooms";
 export { default as longestCommonPrefix } from "./longest-common-prefix";
