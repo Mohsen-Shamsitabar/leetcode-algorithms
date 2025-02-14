@@ -1,5 +1,6 @@
 export { default as addBinary } from "./add-binary";
 export { default as inorderTraversal } from "./binary-tree-inorder-traversal";
+export { default as maxProfit } from "./buy-and-sell-stock-with-transaction-fee";
 export { default as TimeLimitedCache } from "./cache-with-time-limit";
 export { default as combinationSum } from "./combination-sum";
 export { default as goodNodes } from "./count-good-nodes-in-tree";
