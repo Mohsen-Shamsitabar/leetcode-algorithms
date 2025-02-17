@@ -1,52 +1,73 @@
 import type { TreeNode } from "../../types";
 
-const levelOrder = (root: TreeNode | null): number[][] => {
+const _myApproach = (root: TreeNode | null): number[][] => {
   if (!root) return [];
 
   const result: number[][] = [];
   const queue: TreeNode[] = [root];
-  let stack: number[] = [];
-  let counter = 1;
+  let next = 0;
+  let curr = 1;
 
   const bfs = () => {
-    if (!queue.length) return;
+    const oldQueue = [...queue];
 
-    const item = queue.shift()!;
-    stack.push(item.val);
-    counter--;
-
-    if (counter === 0) {
-      result.push(stack);
-      stack = [];
-    }
-
-    let childCound = 0;
+    const item = queue.shift();
+    if (!item) return;
 
     if (item.left) {
-      childCound++;
+      next++;
       queue.push(item.left);
-
-      return;
     }
 
     if (item.right) {
-      childCound++;
+      next++;
       queue.push(item.right);
+    }
 
+    if (oldQueue.length === curr) {
+      const oldVals = oldQueue.map(node => node.val);
+      result.push(oldVals);
+      curr = next;
+      next = 0;
+      bfs();
+      bfs();
       return;
     }
 
-    console.log(childCound);
-
+    curr = next;
     bfs();
     bfs();
-
-    return;
   };
 
   bfs();
 
   return result;
+};
+
+const levelOrder = (root: TreeNode | null): number[][] => {
+  const hashMap = new Map<number, number[]>();
+
+  const bfs = (tree: TreeNode | null, level: number) => {
+    if (!tree) return [];
+
+    if (!hashMap.has(level)) {
+      hashMap.set(level, [tree.val]);
+    } else {
+      hashMap.get(level)!.push(tree.val);
+    }
+
+    if (tree.left) {
+      bfs(tree.left, level + 1);
+    }
+
+    if (tree.right) {
+      bfs(tree.right, level + 1);
+    }
+  };
+
+  bfs(root, 0);
+
+  return Array.from(hashMap.values());
 };
 
 export default levelOrder;
