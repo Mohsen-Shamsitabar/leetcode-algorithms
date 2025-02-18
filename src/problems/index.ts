@@ -18,6 +18,7 @@ export { default as longestCommonPrefix } from "./longest-common-prefix";
 export { default as maxTwinsumOfLinkedList } from "./max-twinsum-of-linked-list";
 export { default as mergeBinaryTrees } from "./merge-binary-trees";
 export { default as mergeTwoLists } from "./merge-two-sorted-lists";
+export { default as missingNumber } from "./missing-number";
 export { default as numberOfGoodPairs } from "./number-of-good-pairs";
 export { default as smallerNumbersThanCurrent } from "./numbers-smaller-than-current-number";
 export { default as partition } from "./palindrome-partitioning";
