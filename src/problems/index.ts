@@ -15,6 +15,7 @@ export { default as groupAnagrams } from "./group-anagrams";
 export { default as invertTree } from "./invert-binary-tree";
 export { default as canVisitAllRooms } from "./keys-and-rooms";
 export { default as longestCommonPrefix } from "./longest-common-prefix";
+export { default as longestSubarray } from "./longest-subarr-after-deleting";
 export { default as maxTwinsumOfLinkedList } from "./max-twinsum-of-linked-list";
 export { default as mergeBinaryTrees } from "./merge-binary-trees";
 export { default as mergeTwoLists } from "./merge-two-sorted-lists";
