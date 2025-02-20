@@ -25,3 +25,7 @@
 >
 
 - https://leetcode.com/problems/combination-sum/description/
+
+>
+
+- https://leetcode.com/problems/number-of-provinces/description/
