@@ -10,6 +10,7 @@ export { default as createCounter } from "./create-counter";
 export { default as ParkingSystem } from "./design-parking-system";
 export { default as differenceOfSums } from "./divisible-non-divisible-sums-diff";
 export { default as findWordsContaining } from "./find-words-containing";
+export { default as flatten } from "./flatten-binary-tree-to-linked-list";
 export { default as generateParenthesis } from "./generate-parentheses";
 export { default as groupAnagrams } from "./group-anagrams";
 export { default as invertTree } from "./invert-binary-tree";
