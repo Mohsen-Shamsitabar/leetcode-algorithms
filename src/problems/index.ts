@@ -25,6 +25,7 @@ export { default as numberOfGoodPairs } from "./number-of-good-pairs";
 export { default as smallerNumbersThanCurrent } from "./numbers-smaller-than-current-number";
 export { default as partition } from "./palindrome-partitioning";
 export { default as permute } from "./permutations";
+export { default as productExceptSelf } from "./product-except-self";
 export { default as removeDuplicatesFromSortedArrayII } from "./remove-duplicates-from-sorted-array-2";
 export { default as removeStars } from "./removing-stars-from-string";
 export { default as reverseLinkedList } from "./reverse-linked-list";
