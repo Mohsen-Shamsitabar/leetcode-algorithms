@@ -7,6 +7,7 @@ export { default as combinationSum } from "./combination-sum";
 export { default as goodNodes } from "./count-good-nodes-in-tree";
 export { default as countNumberOfConsistentStrings } from "./count-number-of-consistent-strings";
 export { default as createCounter } from "./create-counter";
+export { default as dailyTemperatures } from "./daily-temperatures";
 export { default as ParkingSystem } from "./design-parking-system";
 export { default as differenceOfSums } from "./divisible-non-divisible-sums-diff";
 export { default as findWordsContaining } from "./find-words-containing";
