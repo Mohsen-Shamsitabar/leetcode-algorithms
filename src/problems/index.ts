@@ -38,5 +38,6 @@ export { default as rotateImage } from "./rotate-image-inplace";
 export { default as singleNumber } from "./single-number";
 export { default as kthSmallest } from "./smallest-element-in-bst";
 export { default as subsets } from "./subsets";
+export { default as swapPairs } from "./swap-nodes-in-pair";
 export { default as twoSum } from "./two-sum";
 export { default as validParentheses } from "./valid-parentheses";
