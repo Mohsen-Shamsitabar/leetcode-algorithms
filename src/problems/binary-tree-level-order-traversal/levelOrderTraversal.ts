@@ -1,7 +1,7 @@
 import type { TreeNode } from "../../types";
 /*
-*  My approach is NOT CORRECT!
-*/
+ *  My approach is NOT CORRECT!
+ */
 const _myApproach = (root: TreeNode | null): number[][] => {
   if (!root) return [];
 
