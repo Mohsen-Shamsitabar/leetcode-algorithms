@@ -4,10 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "lint": "eslint . --ext ts --report-unused-disable-directives --max-warnings 0"
+    "lint": "eslint . --config .eslintrc",
+    "fmt": "prettier . --config .prettierrc --fix"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
@@ -20,7 +18,7 @@
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-prettier": "^5.2.3",
     "prettier": "^3.4.2",
-    "typescript": "~5.6.2",
-    "vite": "^6.0.5"
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
   }
 }
