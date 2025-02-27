@@ -1,7 +1,7 @@
 /**
  * *`O(N)`*.
  */
-const romanToInteger = (s: string): number => {
+const solution = (s: string): number => {
   const romanMap = {
     I: 1,
     V: 5,
@@ -39,4 +39,4 @@ const romanToInteger = (s: string): number => {
   return result;
 };
 
-export default romanToInteger;
+export default solution;

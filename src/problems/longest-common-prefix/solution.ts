@@ -1,4 +1,4 @@
-// const longestCommonPrefix = (strs: string[]): string => {
+// const solution = (strs: string[]): string => {
 //   let result = strs[0]!;
 
 //   if (strs.length === 1) return result;
@@ -24,7 +24,7 @@
 //   return result;
 // };
 
-const longestCommonPrefix = (strs: string[]): string => {
+const solution = (strs: string[]): string => {
   const sorted = strs.sort((a, b) => (a < b ? -1 : 1));
 
   const output = [];
@@ -42,4 +42,4 @@ const longestCommonPrefix = (strs: string[]): string => {
   return output.join("");
 };
 
-export default longestCommonPrefix;
+export default solution;

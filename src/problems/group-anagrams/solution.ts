@@ -3,7 +3,7 @@
  * SPACE: `O(n + m)`.
  * **Optimal way!**
  */
-// const groupAnagrams = (strs: string[]): string[][] => {
+// const solution = (strs: string[]): string[][] => {
 //   const result: string[][] = [];
 
 //   while (strs.length > 0) {
@@ -65,7 +65,7 @@
  * SPACE: `O(n * m)`.
  * **Worst way!**
  */
-// const groupAnagrams = (strs: string[]): string[][] => {
+// const solution = (strs: string[]): string[][] => {
 //   const result: string[][] = [];
 
 //   while (strs.length > 0) {
@@ -106,7 +106,7 @@
  * SPACE: `O(n)`.
  * **Best way!**
  */
-const groupAnagrams = (strs: string[]): string[][] => {
+const solution = (strs: string[]): string[][] => {
   const map = new Map<string, string[]>();
 
   for (const s of strs) {
@@ -136,4 +136,4 @@ const groupAnagrams = (strs: string[]): string[][] => {
   return Array.from(map.values());
 };
 
-export default groupAnagrams;
+export default solution;

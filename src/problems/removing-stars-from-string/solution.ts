@@ -1,4 +1,4 @@
-const removeStars = (s: string): string => {
+const solution = (s: string): string => {
   const stack: string[] = [];
 
   for (const char of s) {
@@ -13,4 +13,4 @@ const removeStars = (s: string): string => {
   return stack.join("");
 };
 
-export default removeStars;
+export default solution;

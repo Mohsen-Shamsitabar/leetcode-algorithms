@@ -1,7 +1,7 @@
 /**
  * *`O(N*M*C)`*
  */
-// const countConsistentStrings = (allowed: string, words: string[]): number => {
+// const solution = (allowed: string, words: string[]): number => {
 //   let result = 0;
 
 //   for (const word of words) {
@@ -22,7 +22,7 @@
 /**
  * *`O(N*M)`*
  */
-const countConsistentStrings = (allowed: string, words: string[]): number => {
+const solution = (allowed: string, words: string[]): number => {
   let result = 0;
 
   const allowedSet: Set<string> = new Set(allowed);
@@ -42,4 +42,4 @@ const countConsistentStrings = (allowed: string, words: string[]): number => {
   return result;
 };
 
-export default countConsistentStrings;
+export default solution;

@@ -1,4 +1,4 @@
-const maxProfit = (prices: number[], fee: number): number => {
+const solution = (prices: number[], fee: number): number => {
   let cash = 0;
   let hold = -Infinity;
 
@@ -13,4 +13,4 @@ const maxProfit = (prices: number[], fee: number): number => {
   return cash;
 };
 
-export default maxProfit;
+export default solution;

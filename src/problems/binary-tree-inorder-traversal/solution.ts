@@ -1,6 +1,6 @@
 import type { TreeNode } from "../../types";
 
-// const inorderTraversal = (root: TreeNode | null): number[] => {
+// const solution = (root: TreeNode | null): number[] => {
 //   const result: number[] = [];
 
 //   const traverse = (root: TreeNode | null): number[] => {
@@ -16,7 +16,7 @@ import type { TreeNode } from "../../types";
 //   return traverse(root);
 // };
 
-const inorderTraversal = (root: TreeNode | null): number[] => {
+const solution = (root: TreeNode | null): number[] => {
   const stack = [];
   const values = [];
   let current = root;
@@ -35,4 +35,4 @@ const inorderTraversal = (root: TreeNode | null): number[] => {
   return values;
 };
 
-export default inorderTraversal;
+export default solution;

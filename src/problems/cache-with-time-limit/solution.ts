@@ -1,7 +1,7 @@
 type Pair = { value: number; timeOut: NodeJS.Timeout };
 type Cache = Map<number, Pair>;
 
-// class CacheWithTimeLimit {
+// class Solution {
 //   private cache: Cache = new Map();
 
 //   set(key: number, value: number, duration: number): boolean {
@@ -42,7 +42,7 @@ type Cache = Map<number, Pair>;
 //   }
 // }
 
-class CacheWithTimeLimit {
+class Solution {
   private cache: Cache = new Map();
 
   set(key: number, value: number, duration: number): boolean {
@@ -67,4 +67,4 @@ class CacheWithTimeLimit {
   }
 }
 
-export default CacheWithTimeLimit;
+export default Solution;

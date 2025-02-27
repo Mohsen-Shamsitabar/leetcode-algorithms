@@ -4,7 +4,7 @@ import type { TreeNode } from "../../types";
  * TIME = **`O(N)`**
  * SPACE = **`O(N)`**
  */
-const maxLevelSum = (root: TreeNode): number => {
+const solution = (root: TreeNode): number => {
   const levelMap = new Map<number, number>();
 
   const bfsWithLevel = (root: TreeNode, level: number) => {
@@ -44,4 +44,4 @@ const maxLevelSum = (root: TreeNode): number => {
   return result;
 };
 
-export default maxLevelSum;
+export default solution;

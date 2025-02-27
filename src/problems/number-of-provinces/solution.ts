@@ -2,7 +2,7 @@
  * TIME = **`O(N^2)`**
  * SPACE = **`O(N)`**
  */
-const findCircleNum = (isConnected: number[][]): number => {
+const solution = (isConnected: number[][]): number => {
   const dfs = (node: number, isConnected: number[][], visit: boolean[]) => {
     visit[node] = true;
 
@@ -30,4 +30,4 @@ const findCircleNum = (isConnected: number[][]): number => {
   return result;
 };
 
-export default findCircleNum;
+export default solution;

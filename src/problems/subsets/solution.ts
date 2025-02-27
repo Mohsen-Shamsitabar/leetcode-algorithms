@@ -1,4 +1,4 @@
-// const subsets = (nums: number[]): number[][] => {
+// const solution = (nums: number[]): number[][] => {
 //   const result: number[][] = [[]];
 
 //   for (const num of nums) result.push([num]);
@@ -67,7 +67,7 @@
 //   });
 // };
 
-// const subsets = (nums: number[]): number[][] => {
+// const solution = (nums: number[]): number[][] => {
 //   const result: Set<number[]> = new Set([[]]);
 //   // const result: number[][] = [[]];
 
@@ -126,7 +126,7 @@
  *   \/
  */
 //
-const subsets = (nums: number[]): number[][] => {
+const solution = (nums: number[]): number[][] => {
   const sets: number[][] = [[]];
 
   for (const num of nums) {
@@ -140,4 +140,4 @@ const subsets = (nums: number[]): number[][] => {
   return sets;
 };
 
-export default subsets;
+export default solution;

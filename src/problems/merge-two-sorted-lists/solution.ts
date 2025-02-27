@@ -1,6 +1,6 @@
 import type { ListNode } from "../../types";
 
-const mergeTwoLists = (
+const solution = (
   list1: ListNode | null,
   list2: ListNode | null
 ): ListNode | null => {
@@ -8,12 +8,12 @@ const mergeTwoLists = (
   if (!list2) return list1;
 
   if (list1.val < list2.val) {
-    list1.next = mergeTwoLists(list1.next, list2);
+    list1.next = solution(list1.next, list2);
     return list1;
   }
 
-  list2.next = mergeTwoLists(list1, list2.next);
+  list2.next = solution(list1, list2.next);
   return list2;
 };
 
-export default mergeTwoLists;
+export default solution;

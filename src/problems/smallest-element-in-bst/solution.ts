@@ -3,7 +3,7 @@ import type { TreeNode } from "../../types";
 /**
  * can give wrong answer...
  */
-// const kthSmallest = (root: TreeNode | null, k: number): number => {
+// const solution = (root: TreeNode | null, k: number): number => {
 //   const arr: number[] = [];
 
 //   const traverse = (root: TreeNode | null) => {
@@ -25,7 +25,7 @@ import type { TreeNode } from "../../types";
 
 // === === === ===
 
-function kthSmallest(root: TreeNode | null, k: number): number {
+function solution(root: TreeNode | null, k: number): number {
   /**
     In BST, if we want to get the sorted (increasing) item, 
     the first idea is inorder, that LDR could always from small to big,
@@ -60,4 +60,4 @@ function kthSmallest(root: TreeNode | null, k: number): number {
   return cur!.val;
 }
 
-export default kthSmallest;
+export default solution;

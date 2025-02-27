@@ -3,7 +3,7 @@ import { countPossibilities } from "../../utilities/index.ts";
 /**
  * *`O(N^2)`*.
  */
-// const numberOfGoodPairs = (nums: number[]): number => {
+// const solution = (nums: number[]): number => {
 //   let result = 0;
 //   const numsCount = nums.length;
 
@@ -23,7 +23,7 @@ import { countPossibilities } from "../../utilities/index.ts";
 /**
  * *`O(N)`*.
  */
-const numberOfGoodPairs = (nums: number[]): number => {
+const solution = (nums: number[]): number => {
   let result = 0;
 
   const numCounter: Map<number, number> = new Map();
@@ -45,4 +45,4 @@ const numberOfGoodPairs = (nums: number[]): number => {
   return result;
 };
 
-export default numberOfGoodPairs;
+export default solution;

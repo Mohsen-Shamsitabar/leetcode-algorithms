@@ -4,7 +4,7 @@ import type { TreeNode } from "../../types";
  * SPACE = **`O(N)`**
  * TIME = **`O(N)`**
  */
-// const flatten = (root: TreeNode | null): void => {
+// const solution = (root: TreeNode | null): void => {
 //   if (!root) return;
 
 //   const queue: TreeNode[] = [];
@@ -48,7 +48,7 @@ import type { TreeNode } from "../../types";
  * SPACE = **`O(1)`**
  * TIME = **`O(N)`**
  */
-const flatten = (root: TreeNode | null): void => {
+const solution = (root: TreeNode | null): void => {
   let cur = root;
 
   while (cur) {
@@ -68,4 +68,4 @@ const flatten = (root: TreeNode | null): void => {
   }
 };
 
-export default flatten;
+export default solution;

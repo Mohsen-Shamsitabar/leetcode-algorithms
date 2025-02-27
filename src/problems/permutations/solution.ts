@@ -1,4 +1,4 @@
-const permute = (nums: number[]): number[][] => {
+const solution = (nums: number[]): number[][] => {
   let result: number[][] = [[nums[0]!]];
 
   if (nums.length < 2) return result;
@@ -38,7 +38,7 @@ const permute = (nums: number[]): number[][] => {
 
 // Good approaches from solutions tab of leetcode. (NOT MY CODE >:])
 
-// const permute = (nums: number[]): number[][] => {
+// const solution = (nums: number[]): number[][] => {
 //   const permuations: number[][] = [];
 
 //   const chunks: number[] = [];
@@ -65,7 +65,7 @@ const permute = (nums: number[]): number[][] => {
 //   return permuations;
 // };
 
-// const permute = (nums: number[]): number[][] => {
+// const solution = (nums: number[]): number[][] => {
 //   function* permutationsOf(
 //     nums: number[]
 //   ): Generator<number[], undefined, unknown> {
@@ -90,4 +90,4 @@ const permute = (nums: number[]): number[][] => {
 //   return Array.from(permutationsOf(nums));
 // };
 
-export default permute;
+export default solution;

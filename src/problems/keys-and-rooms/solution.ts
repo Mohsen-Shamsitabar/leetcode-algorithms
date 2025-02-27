@@ -1,4 +1,4 @@
-const canVisitAllRooms = (rooms: number[][]): boolean => {
+const solution = (rooms: number[][]): boolean => {
   const visitedRooms = new Set<number>();
 
   const openRoom = (key: number) => {
@@ -14,4 +14,4 @@ const canVisitAllRooms = (rooms: number[][]): boolean => {
   return rooms.length === visitedRooms.size;
 };
 
-export default canVisitAllRooms;
+export default solution;

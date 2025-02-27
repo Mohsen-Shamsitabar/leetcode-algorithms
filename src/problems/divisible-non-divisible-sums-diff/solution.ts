@@ -1,4 +1,4 @@
-const differenceOfSums = (n: number, m: number): number => {
+const solution = (n: number, m: number): number => {
   let divisibleSum = 0;
   let nonDivisibleSum = 0;
 
@@ -10,4 +10,4 @@ const differenceOfSums = (n: number, m: number): number => {
   return nonDivisibleSum - divisibleSum;
 };
 
-export default differenceOfSums;
+export default solution;

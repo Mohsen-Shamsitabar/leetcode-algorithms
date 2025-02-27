@@ -1,4 +1,4 @@
-const productExceptSelf = (nums: number[]): number[] => {
+const solution = (nums: number[]): number[] => {
   const numsLength = nums.length;
 
   const result = new Array<number>(numsLength).fill(1);
@@ -20,4 +20,4 @@ const productExceptSelf = (nums: number[]): number[] => {
   return result;
 };
 
-export default productExceptSelf;
+export default solution;

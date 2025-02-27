@@ -1,4 +1,4 @@
-const singleNumber = (nums: number[]): number => {
+const solution = (nums: number[]): number => {
   // cant figure out a way to make space constant...
   const numsSet = new Set<number>();
 
@@ -12,8 +12,8 @@ const singleNumber = (nums: number[]): number => {
 
 // crazy shit
 
-// const singleNumber = (nums: number[]): number => {
+// const solution = (nums: number[]): number => {
 //   return nums.reduce((prev, val) => prev ^ val, 0);
 // };
 
-export default singleNumber;
+export default solution;
