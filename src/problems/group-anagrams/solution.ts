@@ -3,98 +3,101 @@
  * SPACE: `O(n + m)`.
  * **Optimal way!**
  */
-const _bruteForce = (strs: string[]): string[][] => {
-  const result: string[][] = [];
+// const groupAnagrams = (strs: string[]): string[][] => {
+//   const result: string[][] = [];
 
-  while (strs.length > 0) {
-    const word = strs.pop()!;
-    const anagrams = [word];
-    const charCount = new Map<string, number>();
+//   while (strs.length > 0) {
+//     const word = strs.pop()!;
+//     const anagrams = [word];
+//     const charCount = new Map<string, number>();
 
-    for (const char of word) {
-      const charVal = charCount.get(char) ?? 0;
-      charCount.set(char, charVal + 1);
-    }
+//     for (const char of word) {
+//       const charVal = charCount.get(char) ?? 0;
 
-    let i = 0;
-    checkStr: while (i < strs.length) {
-      const str = strs[i];
+//       charCount.set(char, charVal + 1);
+//     }
 
-      if (str.length !== word.length) {
-        i++;
-        continue;
-      }
+//     let i = 0;
 
-      const map = new Map(charCount);
+//     checkStr: while (i < strs.length) {
+//       const str = strs[i]!;
 
-      for (const char of str) {
-        if (!map.has(char)) {
-          i++;
-          continue checkStr;
-        }
+//       if (str.length !== word.length) {
+//         i++;
+//         continue;
+//       }
 
-        const charVal = map.get(char)!;
+//       const map = new Map(charCount);
 
-        if (charVal - 1 === 0) {
-          map.delete(char);
-          continue;
-        }
+//       for (const char of str) {
+//         if (!map.has(char)) {
+//           i++;
+//           continue checkStr;
+//         }
 
-        map.set(char, charVal - 1);
-      }
+//         const charVal = map.get(char)!;
 
-      if (map.size) {
-        i++;
-        continue;
-      }
+//         if (charVal - 1 === 0) {
+//           map.delete(char);
+//           continue;
+//         }
 
-      strs.splice(i, 1);
-      anagrams.push(str);
-    }
+//         map.set(char, charVal - 1);
+//       }
 
-    result.push(anagrams);
-  }
+//       if (map.size) {
+//         i++;
+//         continue;
+//       }
 
-  return result;
-};
+//       strs.splice(i, 1);
+//       anagrams.push(str);
+//     }
+
+//     result.push(anagrams);
+//   }
+
+//   return result;
+// };
 
 /**
  * TIME: `O(n^2 * m log m)`.
  * SPACE: `O(n * m)`.
  * **Worst way!**
  */
-const _bruteForceSorting = (strs: string[]): string[][] => {
-  const result: string[][] = [];
+// const groupAnagrams = (strs: string[]): string[][] => {
+//   const result: string[][] = [];
 
-  while (strs.length > 0) {
-    const word = strs.pop()!;
-    const anagrams = [word];
-    const sortedWord = word.split("").sort().join("");
+//   while (strs.length > 0) {
+//     const word = strs.pop()!;
+//     const anagrams = [word];
+//     const sortedWord = word.split("").sort().join("");
 
-    let i = 0;
-    while (i < strs.length) {
-      const str = strs[i];
-      const sortedStr = str.split("").sort().join("");
+//     let i = 0;
 
-      if (sortedStr.length !== sortedWord.length) {
-        i++;
-        continue;
-      }
+//     while (i < strs.length) {
+//       const str = strs[i]!;
+//       const sortedStr = str.split("").sort().join("");
 
-      if (sortedStr !== sortedWord) {
-        i++;
-        continue;
-      }
+//       if (sortedStr.length !== sortedWord.length) {
+//         i++;
+//         continue;
+//       }
 
-      strs.splice(i, 1);
-      anagrams.push(str);
-    }
+//       if (sortedStr !== sortedWord) {
+//         i++;
+//         continue;
+//       }
 
-    result.push(anagrams);
-  }
+//       strs.splice(i, 1);
+//       anagrams.push(str);
+//     }
 
-  return result;
-};
+//     result.push(anagrams);
+//   }
+
+//   return result;
+// };
 
 // ---
 
@@ -103,7 +106,7 @@ const _bruteForceSorting = (strs: string[]): string[][] => {
  * SPACE: `O(n)`.
  * **Best way!**
  */
-const asciiSortingApproach = (strs: string[]): string[][] => {
+const groupAnagrams = (strs: string[]): string[][] => {
   const map = new Map<string, string[]>();
 
   for (const s of strs) {
@@ -114,7 +117,8 @@ const asciiSortingApproach = (strs: string[]): string[][] => {
     for (let i = 0; i < s.length; i++) {
       const ascii = s.charCodeAt(i);
       const idx = ascii - 97;
-      charFreq[idx]++;
+
+      charFreq[idx]!++;
     }
 
     // Convert frequency array to string key
@@ -132,4 +136,4 @@ const asciiSortingApproach = (strs: string[]): string[][] => {
   return Array.from(map.values());
 };
 
-export default asciiSortingApproach;
+export default groupAnagrams;

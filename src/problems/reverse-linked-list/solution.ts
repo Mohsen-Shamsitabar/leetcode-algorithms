@@ -1,6 +1,6 @@
 import type { ListNode } from "../../types";
 
-const traverseApproach = (head: ListNode | null): ListNode | null => {
+const reverseLinkedList = (head: ListNode | null): ListNode | null => {
   let prev: ListNode | null = null;
   let curr: ListNode | null = head;
 
@@ -15,19 +15,19 @@ const traverseApproach = (head: ListNode | null): ListNode | null => {
   return prev;
 };
 
-const _recursiveApproach = (head: ListNode | null): ListNode | null => {
-  if (!head) return head;
+// const reverseLinkedList = (head: ListNode | null): ListNode | null => {
+//   if (!head) return head;
 
-  const reverse = (curr: ListNode, parent: ListNode | null): ListNode => {
-    const next = curr.next;
+//   const reverse = (curr: ListNode, parent: ListNode | null): ListNode => {
+//     const next = curr.next;
 
-    curr = { val: curr.val, next: parent };
+//     curr = { val: curr.val, next: parent };
 
-    if (!next) return curr;
-    return reverse(next, curr);
-  };
+//     if (!next) return curr;
+//     return reverse(next, curr);
+//   };
 
-  return reverse(head, null);
-};
+//   return reverse(head, null);
+// };
 
-export default traverseApproach;
+export default reverseLinkedList;

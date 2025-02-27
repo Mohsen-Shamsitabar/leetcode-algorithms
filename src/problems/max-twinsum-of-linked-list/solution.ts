@@ -17,8 +17,8 @@ const pairSum = (head: ListNode | null): number => {
   for (let i = 0; i < values.length / 2; i++) {
     const j = values.length - i - 1;
 
-    const firstTwin = values[i];
-    const secondTwin = values[j];
+    const firstTwin = values[i]!;
+    const secondTwin = values[j]!;
 
     const twinSum = firstTwin + secondTwin;
 

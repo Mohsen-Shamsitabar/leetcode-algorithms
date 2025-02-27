@@ -3,25 +3,25 @@ import type { TreeNode } from "../../types";
 /**
  * can give wrong answer...
  */
-const _myApproach = (root: TreeNode | null, k: number): number => {
-  const arr: number[] = [];
+// const kthSmallest = (root: TreeNode | null, k: number): number => {
+//   const arr: number[] = [];
 
-  const traverse = (root: TreeNode | null) => {
-    if (!root) return;
+//   const traverse = (root: TreeNode | null) => {
+//     if (!root) return;
 
-    arr.push(root.val);
+//     arr.push(root.val);
 
-    traverse(root.left);
-    traverse(root.right);
-  };
+//     traverse(root.left);
+//     traverse(root.right);
+//   };
 
-  traverse(root);
+//   traverse(root);
 
-  // const sortedArr = mergeSort(arr);
-  const sortedArr = arr.sort();
+//   // const sortedArr = mergeSort(arr);
+//   const sortedArr = arr.sort();
 
-  return sortedArr[k - 1];
-};
+//   return sortedArr[k - 1];
+// };
 
 // === === === ===
 
@@ -38,11 +38,14 @@ function kthSmallest(root: TreeNode | null, k: number): number {
   // then concat `DR` to the rightmost of `L` tree.
 
   let cur = root;
+
   while (cur !== null) {
     if (cur.left !== null) {
       const left = cur.left;
+
       cur.left = null;
       let rightmost = left;
+
       while (rightmost.right !== null) rightmost = rightmost.right;
       rightmost.right = cur;
 
@@ -53,6 +56,7 @@ function kthSmallest(root: TreeNode | null, k: number): number {
       else break;
     }
   }
+
   return cur!.val;
 }
 

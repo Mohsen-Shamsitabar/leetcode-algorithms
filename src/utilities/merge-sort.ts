@@ -2,7 +2,7 @@ const merge = <T>(left: T[], right: T[]): T[] => {
   const arr = [] as T[];
 
   while (left.length && right.length) {
-    if (left[0] < right[0]) {
+    if (left[0]! < right[0]!) {
       arr.push(left.shift()!);
     } else {
       arr.push(right.shift()!);
@@ -25,6 +25,7 @@ const mergeSort = <T>(array: T[]): T[] => {
   }
 
   const left = fetchedArray.splice(0, half);
+
   return merge(mergeSort(left), mergeSort(fetchedArray));
 };
 

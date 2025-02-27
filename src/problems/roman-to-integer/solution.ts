@@ -14,6 +14,7 @@ const romanToInteger = (s: string): number => {
 
   let result = 0;
   let i = 0;
+
   while (i <= s.length - 1) {
     const iNum = romanMap[s[i] as keyof typeof romanMap];
 

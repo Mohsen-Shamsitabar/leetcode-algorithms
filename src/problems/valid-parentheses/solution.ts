@@ -1,43 +1,43 @@
 /**
  * *`Uses dict logic`*.
  */
-const _validParentheses = (s: string): boolean => {
-  const parenthesesMap = {
-    "(": ")",
-    "{": "}",
-    "[": "]"
-  };
+// const validParentheses = (s: string): boolean => {
+//   const parenthesesMap = {
+//     "(": ")",
+//     "{": "}",
+//     "[": "]"
+//   };
 
-  const opens = Object.keys(parenthesesMap);
+//   const opens = Object.keys(parenthesesMap);
 
-  const stack = [];
+//   const stack = [];
 
-  for (let i = 0; i < s.length; i++) {
-    const char = s[i];
+//   for (let i = 0; i < s.length; i++) {
+//     const char = s[i]!;
 
-    if (opens.includes(char)) {
-      stack.push(char);
-      continue;
-    }
+//     if (opens.includes(char)) {
+//       stack.push(char);
+//       continue;
+//     }
 
-    if (stack.length === 0) return false;
+//     if (stack.length === 0) return false;
 
-    const lastOppened = stack.pop()!;
+//     const lastOppened = stack.pop()!;
 
-    if (char !== parenthesesMap[lastOppened as keyof typeof parenthesesMap]) {
-      return false;
-    }
-  }
+//     if (char !== parenthesesMap[lastOppened as keyof typeof parenthesesMap]) {
+//       return false;
+//     }
+//   }
 
-  if (stack.length !== 0) return false;
+//   if (stack.length !== 0) return false;
 
-  return true;
-};
+//   return true;
+// };
 
 /**
  * *`Uses hashmap logic`*.
  */
-const validParentheses2 = (s: string): boolean => {
+const validParentheses = (s: string): boolean => {
   const parenthesesMap: Map<string, string> = new Map([
     ["(", ")"],
     ["[", "]"],
@@ -47,7 +47,7 @@ const validParentheses2 = (s: string): boolean => {
   const stack = [];
 
   for (let i = 0; i < s.length; i++) {
-    const char = s[i];
+    const char = s[i]!;
 
     if (parenthesesMap.has(char)) {
       stack.push(char);
@@ -68,4 +68,4 @@ const validParentheses2 = (s: string): boolean => {
   return true;
 };
 
-export default validParentheses2;
+export default validParentheses;

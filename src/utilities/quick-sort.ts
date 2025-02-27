@@ -1,19 +1,19 @@
 const partition = <T>(array: T[], start: number, end: number) => {
-  const pivotValue = array[start];
+  const pivotValue = array[start]!;
   let swapIndex = start;
 
   for (let i = start + 1; i <= end; i++) {
-    if (pivotValue > array[i]) {
+    if (pivotValue > array[i]!) {
       swapIndex++;
 
       if (i !== swapIndex) {
-        [array[i], array[swapIndex]] = [array[swapIndex], array[i]];
+        [array[i], array[swapIndex]] = [array[swapIndex]!, array[i]!];
       }
     }
   }
 
   if (swapIndex !== start) {
-    [array[swapIndex], array[start]] = [array[start], array[swapIndex]];
+    [array[swapIndex], array[start]] = [array[start]!, array[swapIndex]!];
   }
 
   return swapIndex;

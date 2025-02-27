@@ -12,6 +12,7 @@ const maxLevelSum = (root: TreeNode): number => {
       levelMap.set(level, root.val);
     } else {
       const currentVal = levelMap.get(level)!;
+
       levelMap.set(level, root.val + currentVal);
     }
 

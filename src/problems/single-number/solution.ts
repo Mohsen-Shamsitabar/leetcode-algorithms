@@ -1,4 +1,4 @@
-const myApproach = (nums: number[]): number => {
+const singleNumber = (nums: number[]): number => {
   // cant figure out a way to make space constant...
   const numsSet = new Set<number>();
 
@@ -12,8 +12,8 @@ const myApproach = (nums: number[]): number => {
 
 // crazy shit
 
-const _bitwiseApproach = (nums: number[]): number => {
-  return nums.reduce((prev, val) => prev ^ val, 0);
-};
+// const singleNumber = (nums: number[]): number => {
+//   return nums.reduce((prev, val) => prev ^ val, 0);
+// };
 
-export default myApproach;
+export default singleNumber;

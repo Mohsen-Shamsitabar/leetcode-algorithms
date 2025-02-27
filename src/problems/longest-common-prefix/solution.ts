@@ -1,37 +1,38 @@
-const _firstApproach = (strs: string[]): string => {
-  let result = strs[0];
+// const longestCommonPrefix = (strs: string[]): string => {
+//   let result = strs[0]!;
 
-  if (strs.length === 1) return result;
+//   if (strs.length === 1) return result;
 
-  for (const str of strs) {
-    if (!str.length || !result.length) return "";
+//   for (const str of strs) {
+//     if (!str.length || !result.length) return "";
 
-    for (let i = 0; i < result.length; i++) {
-      if (i >= str.length) {
-        result = result.slice(0, i);
-        break;
-      }
+//     for (let i = 0; i < result.length; i++) {
+//       if (i >= str.length) {
+//         result = result.slice(0, i);
+//         break;
+//       }
 
-      const resultChar = result[i];
-      const strChar = str[i];
+//       const resultChar = result[i];
+//       const strChar = str[i];
 
-      if (resultChar !== strChar) {
-        result = result.slice(0, i);
-      }
-    }
-  }
+//       if (resultChar !== strChar) {
+//         result = result.slice(0, i);
+//       }
+//     }
+//   }
 
-  return result;
-};
+//   return result;
+// };
 
-const secondApproach = (strs: string[]): string => {
+const longestCommonPrefix = (strs: string[]): string => {
   const sorted = strs.sort((a, b) => (a < b ? -1 : 1));
 
   const output = [];
-  const firstword = sorted[0];
-  const lastword = sorted[sorted.length - 1];
+  const firstword = sorted[0]!;
+  const lastword = sorted[sorted.length - 1]!;
+
   for (let i = 0; i < firstword.length; i++) {
-    if (firstword[i] == lastword[i]) {
+    if (firstword[i] === lastword[i]) {
       output.push(firstword[i]);
     } else {
       break;
@@ -41,4 +42,4 @@ const secondApproach = (strs: string[]): string => {
   return output.join("");
 };
 
-export default secondApproach;
+export default longestCommonPrefix;

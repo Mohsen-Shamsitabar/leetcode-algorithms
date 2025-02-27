@@ -7,7 +7,7 @@ const findCircleNum = (isConnected: number[][]): number => {
     visit[node] = true;
 
     for (let i = 0; i < isConnected.length; i++) {
-      if (isConnected[node][i] && !visit[i]) {
+      if (isConnected[node]![i] && !visit[i]) {
         dfs(i, isConnected, visit);
       }
     }

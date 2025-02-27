@@ -1,4 +1,4 @@
-import factorial from "./factorial";
+import factorial from "./factorial.ts";
 
 /**
  * count possibilites of picking n elements from m elements.
