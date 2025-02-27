@@ -1,7 +1,7 @@
 /**
  * *`O(N)`*.
  */
-const addBinary = (a: string, b: string): string => {
+const solution = (a: string, b: string): string => {
   let result = "";
 
   let lengthA = a.length;
@@ -36,4 +36,4 @@ const addBinary = (a: string, b: string): string => {
   return result;
 };
 
-export default addBinary;
+export default solution;

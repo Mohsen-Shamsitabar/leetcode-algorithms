@@ -1,4 +1,4 @@
-// const minCostClimbingStairs = (cost: number[]): number => {
+// const solution = (cost: number[]): number => {
 //   const minCost = Array.from(cost);
 
 //   for (let i = cost.length - 3; i >= 0; i--) {
@@ -9,7 +9,7 @@
 //   return Math.min(minCost[0]!, minCost[1]!);
 // };
 
-const minCostClimbingStairs = (cost: number[]): number => {
+const solution = (cost: number[]): number => {
   const costlength = cost.length;
   let [a, b] = [cost[costlength - 2]!, cost[costlength - 1]!];
 
@@ -23,4 +23,4 @@ const minCostClimbingStairs = (cost: number[]): number => {
   return Math.min(a, b);
 };
 
-export default minCostClimbingStairs;
+export default solution;

@@ -1,4 +1,4 @@
-const rotate = (matrix: number[][]): void => {
+const solution = (matrix: number[][]): void => {
   for (let i = 0; i < matrix.length; i++) {
     for (let j = i; j < matrix.length; j++) {
       // Transpose the matrix.
@@ -14,4 +14,4 @@ const rotate = (matrix: number[][]): void => {
   return;
 };
 
-export default rotate;
+export default solution;

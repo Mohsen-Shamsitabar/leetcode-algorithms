@@ -3,7 +3,7 @@ import type { TreeNode } from "../../types";
 /*
  *  My approach is NOT CORRECT!
  */
-// const levelOrder = (root: TreeNode | null): number[][] => {
+// const solution = (root: TreeNode | null): number[][] => {
 //   if (!root) return [];
 
 //   const result: number[][] = [];
@@ -49,7 +49,7 @@ import type { TreeNode } from "../../types";
 //   return result;
 // };
 
-const levelOrder = (root: TreeNode | null): number[][] => {
+const solution = (root: TreeNode | null): number[][] => {
   const hashMap = new Map<number, number[]>();
 
   const bfs = (tree: TreeNode | null, level: number) => {
@@ -75,4 +75,4 @@ const levelOrder = (root: TreeNode | null): number[][] => {
   return Array.from(hashMap.values());
 };
 
-export default levelOrder;
+export default solution;

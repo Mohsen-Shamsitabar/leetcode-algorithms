@@ -2,7 +2,7 @@
  * Wrong answer, it has duplicate values, like [3,5] and [5,3].
  * If i remove these values, it works.
  */
-// const combinationSum = (candidates: number[], target: number): number[][] => {
+// const solution = (candidates: number[], target: number): number[][] => {
 //   const nums = new Set<number>(candidates);
 //   const result: number[][] = [];
 
@@ -32,7 +32,7 @@
 
 // === === ===
 
-const combinationSum = (candidates: number[], target: number): number[][] => {
+const solution = (candidates: number[], target: number): number[][] => {
   const result: number[][] = [];
 
   const backtrack = (start: number, t: number, combination: number[]) => {
@@ -58,4 +58,4 @@ const combinationSum = (candidates: number[], target: number): number[][] => {
   return result;
 };
 
-export default combinationSum;
+export default solution;

@@ -2,7 +2,7 @@
   Time Complexity: O(n * 2^n).
   Space Complexity: O(n^2).
  */
-const backTrackingApproach = (s: string): string[][] => {
+const solution = (s: string): string[][] => {
   const result: string[][] = [];
   const solution: string[] = [];
 
@@ -41,4 +41,4 @@ const backTrackingApproach = (s: string): string[][] => {
   return result;
 };
 
-export default backTrackingApproach;
+export default solution;

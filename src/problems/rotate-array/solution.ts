@@ -1,7 +1,7 @@
 /**
  * *`O(N)`*.
  */
-// const rotateArray = (nums: number[], k: number): void => {
+// const solution = (nums: number[], k: number): void => {
 //   const length = nums.length;
 
 //   const newNums = new Array(length) as number[];
@@ -30,7 +30,7 @@ const swap = (nums: number[], head: number, tail: number) => {
   }
 };
 
-const rotateArray = (nums: number[], k: number) => {
+const solution = (nums: number[], k: number) => {
   const N = nums.length;
   const K = k % N;
   const B = N - K - 1;
@@ -40,4 +40,4 @@ const rotateArray = (nums: number[], k: number) => {
   swap(nums, 0, N - 1);
 };
 
-export default rotateArray;
+export default solution;

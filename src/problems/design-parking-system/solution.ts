@@ -1,4 +1,4 @@
-class ParkingSystem {
+class Solution {
   spots: [number, number, number] = [0, 0, 0];
 
   constructor(big: number, medium: number, small: number) {
@@ -13,4 +13,4 @@ class ParkingSystem {
   }
 }
 
-export default ParkingSystem;
+export default Solution;

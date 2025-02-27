@@ -1,4 +1,4 @@
-// const smallerNumbersThanCurrent = (nums: number[]): number[] => {
+// const solution = (nums: number[]): number[] => {
 //   const result: number[] = [];
 
 //   for (let i = 0; i < nums.length; i++) {
@@ -20,7 +20,7 @@
 //   return result;
 // };
 
-const smallerNumbersThanCurrent = (nums: number[]): number[] => {
+const solution = (nums: number[]): number[] => {
   const result: number[] = [];
   const sorted: number[] = [...nums].sort((a, b) => a - b);
   const countMap = new Map<number, number>();
@@ -38,4 +38,4 @@ const smallerNumbersThanCurrent = (nums: number[]): number[] => {
   return result;
 };
 
-export default smallerNumbersThanCurrent;
+export default solution;

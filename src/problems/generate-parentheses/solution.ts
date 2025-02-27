@@ -1,4 +1,4 @@
-const generateParenthesis = (n: number): string[] => {
+const solution = (n: number): string[] => {
   const result: string[] = [];
 
   const build = (openCount: number, closeCount: number, str: string) => {
@@ -22,4 +22,4 @@ const generateParenthesis = (n: number): string[] => {
   return result;
 };
 
-export default generateParenthesis;
+export default solution;

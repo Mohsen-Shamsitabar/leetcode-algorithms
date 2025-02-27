@@ -1,7 +1,7 @@
 /**
  * SPACE = TIME = **`O(N)`**
  */
-// const longestSubarray = (nums: number[]): number => {
+// const solution = (nums: number[]): number => {
 //   const seqArr = [];
 //   let result = 0;
 
@@ -43,7 +43,7 @@
  * SPACE = **`O(1)`**
  * TIME = **`O(N)`**
  */
-const longestSubarray = (nums: number[]): number => {
+const solution = (nums: number[]): number => {
   let maxLength = 0;
   let count = 0;
   let onesBefore = 0;
@@ -62,4 +62,4 @@ const longestSubarray = (nums: number[]): number => {
   return Math.min(maxLength, nums.length - 1);
 };
 
-export default longestSubarray;
+export default solution;

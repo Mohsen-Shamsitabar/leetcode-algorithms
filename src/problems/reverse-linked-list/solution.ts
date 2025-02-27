@@ -1,6 +1,6 @@
 import type { ListNode } from "../../types";
 
-const reverseLinkedList = (head: ListNode | null): ListNode | null => {
+const solution = (head: ListNode | null): ListNode | null => {
   let prev: ListNode | null = null;
   let curr: ListNode | null = head;
 
@@ -15,7 +15,7 @@ const reverseLinkedList = (head: ListNode | null): ListNode | null => {
   return prev;
 };
 
-// const reverseLinkedList = (head: ListNode | null): ListNode | null => {
+// const solution = (head: ListNode | null): ListNode | null => {
 //   if (!head) return head;
 
 //   const reverse = (curr: ListNode, parent: ListNode | null): ListNode => {
@@ -30,4 +30,4 @@ const reverseLinkedList = (head: ListNode | null): ListNode | null => {
 //   return reverse(head, null);
 // };
 
-export default reverseLinkedList;
+export default solution;

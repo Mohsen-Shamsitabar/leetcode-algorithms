@@ -1,7 +1,7 @@
 /**
  * *`Uses dict logic`*.
  */
-// const validParentheses = (s: string): boolean => {
+// const solution = (s: string): boolean => {
 //   const parenthesesMap = {
 //     "(": ")",
 //     "{": "}",
@@ -37,7 +37,7 @@
 /**
  * *`Uses hashmap logic`*.
  */
-const validParentheses = (s: string): boolean => {
+const solution = (s: string): boolean => {
   const parenthesesMap: Map<string, string> = new Map([
     ["(", ")"],
     ["[", "]"],
@@ -68,4 +68,4 @@ const validParentheses = (s: string): boolean => {
   return true;
 };
 
-export default validParentheses;
+export default solution;

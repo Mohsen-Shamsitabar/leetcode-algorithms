@@ -1,7 +1,7 @@
 /**
  * *`O(N)`*.
  */
-const removeDuplicatesFromSortedArrayII = (nums: number[]): number => {
+const solution = (nums: number[]): number => {
   const length = nums.length;
 
   if (length <= 2) return length;
@@ -39,4 +39,4 @@ const removeDuplicatesFromSortedArrayII = (nums: number[]): number => {
   return k;
 };
 
-export default removeDuplicatesFromSortedArrayII;
+export default solution;

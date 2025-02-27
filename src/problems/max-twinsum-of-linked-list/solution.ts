@@ -1,6 +1,6 @@
 import type { ListNode } from "../../types";
 
-const pairSum = (head: ListNode | null): number => {
+const solution = (head: ListNode | null): number => {
   const values: ListNode["val"][] = [];
   let result = -Infinity;
 
@@ -28,4 +28,4 @@ const pairSum = (head: ListNode | null): number => {
   return result;
 };
 
-export default pairSum;
+export default solution;

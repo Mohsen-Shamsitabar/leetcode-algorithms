@@ -1,7 +1,7 @@
-const createCounter = (n: number): (() => number) => {
+const solution = (n: number): (() => number) => {
   return () => {
     return n++;
   };
 };
 
-export default createCounter;
+export default solution;

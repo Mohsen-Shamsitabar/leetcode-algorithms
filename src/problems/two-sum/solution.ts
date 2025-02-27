@@ -1,7 +1,7 @@
 /**
  * *`O(N^2)`*.
  */
-// const twoSum = (nums: number[], target: number): number[] => {
+// const solution = (nums: number[], target: number): number[] => {
 //   const result: number[] = [];
 
 //   for (let i = 0; i < nums.length - 1; i++) {
@@ -22,7 +22,7 @@
 /**
  * *`O(N)`*.
  */
-const twoSum = (nums: number[], target: number): number[] => {
+const solution = (nums: number[], target: number): number[] => {
   const hashMap: Map<number, number> = new Map();
 
   for (let i = 0; i < nums.length; ++i) {
@@ -36,4 +36,4 @@ const twoSum = (nums: number[], target: number): number[] => {
   return [-1, -1];
 };
 
-export default twoSum;
+export default solution;

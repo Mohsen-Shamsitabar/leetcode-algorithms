@@ -1,6 +1,6 @@
 import type { TreeNode } from "../../types";
 
-const goodNodes = (root: TreeNode | null): number => {
+const solution = (root: TreeNode | null): number => {
   if (!root) return 0;
 
   let result = 0;
@@ -29,4 +29,4 @@ const goodNodes = (root: TreeNode | null): number => {
   return result;
 };
 
-export default goodNodes;
+export default solution;

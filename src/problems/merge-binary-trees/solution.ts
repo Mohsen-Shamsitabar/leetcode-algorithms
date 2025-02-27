@@ -1,6 +1,6 @@
 import type { TreeNode } from "../../types";
 
-const mergeTrees = (
+const solution = (
   root1: TreeNode | null,
   root2: TreeNode | null
 ): TreeNode | null => {
@@ -10,11 +10,11 @@ const mergeTrees = (
 
   const newNode: TreeNode = {
     val: root1!.val + root2!.val,
-    left: mergeTrees(root1!.left, root2!.left),
-    right: mergeTrees(root1!.right, root2!.right)
+    left: solution(root1!.left, root2!.left),
+    right: solution(root1!.right, root2!.right)
   };
 
   return newNode;
 };
 
-export default mergeTrees;
+export default solution;

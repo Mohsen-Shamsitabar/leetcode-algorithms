@@ -1,6 +1,6 @@
 import type { TreeNode } from "../../types";
 
-// const invertBinaryTree = (root: TreeNode | null): TreeNode | null => {
+// const solution = (root: TreeNode | null): TreeNode | null => {
 //   if (!root) return null;
 
 //   const switchNodes = (root: TreeNode | null): void => {
@@ -20,15 +20,15 @@ import type { TreeNode } from "../../types";
 //   return root;
 // };
 
-const invertBinaryTree = (root: TreeNode | null): TreeNode | null => {
+const solution = (root: TreeNode | null): TreeNode | null => {
   if (!root) return null;
 
   [root.left, root.right] = [root.right, root.left];
 
-  invertBinaryTree(root.left);
-  invertBinaryTree(root.right);
+  solution(root.left);
+  solution(root.right);
 
   return root;
 };
 
-export default invertBinaryTree;
+export default solution;
