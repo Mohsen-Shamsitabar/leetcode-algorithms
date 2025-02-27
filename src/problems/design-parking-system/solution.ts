@@ -8,7 +8,7 @@ class ParkingSystem {
   public addCar(carType: number): boolean {
     if (this.spots[carType - 1] === 0) return false;
 
-    this.spots[carType - 1]--;
+    this.spots[carType - 1]!--;
     return true;
   }
 }

@@ -2,15 +2,15 @@
  * TIME: **`O(n)`**
  * SPACE: **`O(n)`**
  */
-const _traversalApproach = (nums: number[]): number => {
-  const numsSet = new Set<number>(nums);
+// const sumApproach = (nums: number[]): number => {
+//   const numsSet = new Set<number>(nums);
 
-  for (let num = 0; num <= numsSet.size; num++) {
-    if (!numsSet.has(num)) return num;
-  }
+//   for (let num = 0; num <= numsSet.size; num++) {
+//     if (!numsSet.has(num)) return num;
+//   }
 
-  return -1;
-};
+//   return -1;
+// };
 
 /**
  * TIME: **`O(n)`**

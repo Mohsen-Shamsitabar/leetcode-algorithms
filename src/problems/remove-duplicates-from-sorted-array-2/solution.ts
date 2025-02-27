@@ -11,8 +11,9 @@ const removeDuplicatesFromSortedArrayII = (nums: number[]): number => {
 
   let i = 0;
   let k = length;
+
   while (i < k) {
-    const current = nums[i];
+    const current = nums[i]!;
 
     if (prev === null) {
       prev = current;

@@ -11,9 +11,9 @@ const binarySearch = <T>(array: T[], target: T) => {
   while (start <= end) {
     const middle = Math.floor((start + end) / 2);
 
-    if (array[middle] < target) {
+    if (array[middle]! < target) {
       start = middle + 1;
-    } else if (array[middle] > target) {
+    } else if (array[middle]! > target) {
       end = middle - 1;
     } else if (array[middle] === target) {
       return middle;

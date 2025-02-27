@@ -6,15 +6,15 @@ const productExceptSelf = (nums: number[]): number[] => {
   let product = 1;
 
   for (let i = 0; i < numsLength; i++) {
-    result[i] *= product;
-    product *= nums[i];
+    result[i]! *= product;
+    product *= nums[i]!;
   }
 
   product = 1;
 
   for (let i = numsLength - 1; i >= 0; i--) {
-    result[i] *= product;
-    product *= nums[i];
+    result[i]! *= product;
+    product *= nums[i]!;
   }
 
   return result;

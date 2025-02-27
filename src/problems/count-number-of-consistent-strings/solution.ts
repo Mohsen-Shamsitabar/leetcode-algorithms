@@ -1,28 +1,28 @@
 /**
  * *`O(N*M*C)`*
  */
-const _firstApproach = (allowed: string, words: string[]): number => {
-  let result = 0;
+// const countConsistentStrings = (allowed: string, words: string[]): number => {
+//   let result = 0;
 
-  for (const word of words) {
-    const wordLength = word.length;
+//   for (const word of words) {
+//     const wordLength = word.length;
 
-    for (let i = 0; i < wordLength; i++) {
-      const char = word[i];
+//     for (let i = 0; i < wordLength; i++) {
+//       const char = word[i]!;
 
-      if (!allowed.includes(char)) break;
+//       if (!allowed.includes(char)) break;
 
-      if (i === wordLength - 1) result++;
-    }
-  }
+//       if (i === wordLength - 1) result++;
+//     }
+//   }
 
-  return result;
-};
+//   return result;
+// };
 
 /**
  * *`O(N*M)`*
  */
-const secondApproach = (allowed: string, words: string[]): number => {
+const countConsistentStrings = (allowed: string, words: string[]): number => {
   let result = 0;
 
   const allowedSet: Set<string> = new Set(allowed);
@@ -31,7 +31,7 @@ const secondApproach = (allowed: string, words: string[]): number => {
     const wordLength = word.length;
 
     for (let i = 0; i < wordLength; i++) {
-      const char = word[i];
+      const char = word[i]!;
 
       if (!allowedSet.has(char)) break;
 
@@ -42,4 +42,4 @@ const secondApproach = (allowed: string, words: string[]): number => {
   return result;
 };
 
-export default secondApproach;
+export default countConsistentStrings;

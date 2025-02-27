@@ -7,13 +7,13 @@ const selectionSort = <T>(array: T[]) => {
     let lowest = i;
 
     for (let j = i + 1; j < array.length; j++) {
-      if (array[j] < array[lowest]) {
+      if (array[j]! < array[lowest]!) {
         lowest = j;
       }
     }
 
     if (lowest !== i) {
-      [array[i], array[lowest]] = [array[lowest], array[i]];
+      [array[i], array[lowest]] = [array[lowest]!, array[i]!];
     }
   }
 

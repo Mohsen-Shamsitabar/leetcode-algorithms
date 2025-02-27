@@ -5,6 +5,7 @@ const generateParenthesis = (n: number): string[] => {
     if (openCount === n) {
       const delta = openCount - closeCount;
       const newStr = str.concat(")".repeat(delta));
+
       result.push(newStr);
       return;
     }

@@ -6,7 +6,7 @@ const canVisitAllRooms = (rooms: number[][]): boolean => {
 
     visitedRooms.add(key);
 
-    rooms[key].forEach(keyInRoom => openRoom(keyInRoom));
+    rooms[key]!.forEach(keyInRoom => openRoom(keyInRoom));
   };
 
   openRoom(0);

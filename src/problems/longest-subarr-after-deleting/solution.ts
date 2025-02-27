@@ -1,41 +1,43 @@
 /**
  * SPACE = TIME = **`O(N)`**
  */
-const _myApproach = (nums: number[]): number => {
-  const seqArr = [];
-  let result = 0;
+// const longestSubarray = (nums: number[]): number => {
+//   const seqArr = [];
+//   let result = 0;
 
-  let sumAmount = 0;
-  for (const num of nums) {
-    if (num === 0) {
-      if (sumAmount) seqArr.push(sumAmount);
-      seqArr.push(num);
+//   let sumAmount = 0;
 
-      sumAmount = 0;
-      continue;
-    }
+//   for (const num of nums) {
+//     if (num === 0) {
+//       if (sumAmount) seqArr.push(sumAmount);
+//       seqArr.push(num);
 
-    sumAmount++;
-  }
+//       sumAmount = 0;
+//       continue;
+//     }
 
-  if (sumAmount) seqArr.push(sumAmount);
+//     sumAmount++;
+//   }
 
-  // === === === //
+//   if (sumAmount) seqArr.push(sumAmount);
 
-  if (seqArr.length === 1) return seqArr[0] === 0 ? 0 : seqArr[0] - 1;
+//   // === === === //
 
-  for (let i = 0; i < seqArr.length; i++) {
-    const center = seqArr[i];
-    if (center !== 0) continue;
+//   if (seqArr.length === 1) return seqArr[0] === 0 ? 0 : seqArr[0]! - 1;
 
-    const left = seqArr[i - 1];
-    const right = seqArr[i + 1];
+//   for (let i = 0; i < seqArr.length; i++) {
+//     const center = seqArr[i];
 
-    result = Math.max(result, (left ?? 0) + (right ?? 0));
-  }
+//     if (center !== 0) continue;
 
-  return result;
-};
+//     const left = seqArr[i - 1];
+//     const right = seqArr[i + 1];
+
+//     result = Math.max(result, (left ?? 0) + (right ?? 0));
+//   }
+
+//   return result;
+// };
 
 /**
  * SPACE = **`O(1)`**

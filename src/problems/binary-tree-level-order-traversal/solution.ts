@@ -1,56 +1,59 @@
 import type { TreeNode } from "../../types";
+
 /*
  *  My approach is NOT CORRECT!
  */
-const _myApproach = (root: TreeNode | null): number[][] => {
-  if (!root) return [];
+// const levelOrder = (root: TreeNode | null): number[][] => {
+//   if (!root) return [];
 
-  const result: number[][] = [];
-  const queue: TreeNode[] = [root];
-  let next = 0;
-  let curr = 1;
+//   const result: number[][] = [];
+//   const queue: TreeNode[] = [root];
+//   let next = 0;
+//   let curr = 1;
 
-  const bfs = () => {
-    const oldQueue = [...queue];
+//   const bfs = () => {
+//     const oldQueue = [...queue];
 
-    const item = queue.shift();
-    if (!item) return;
+//     const item = queue.shift();
 
-    if (item.left) {
-      next++;
-      queue.push(item.left);
-    }
+//     if (!item) return;
 
-    if (item.right) {
-      next++;
-      queue.push(item.right);
-    }
+//     if (item.left) {
+//       next++;
+//       queue.push(item.left);
+//     }
 
-    if (oldQueue.length === curr) {
-      const oldVals = oldQueue.map(node => node.val);
-      result.push(oldVals);
-      curr = next;
-      next = 0;
-      bfs();
-      bfs();
-      return;
-    }
+//     if (item.right) {
+//       next++;
+//       queue.push(item.right);
+//     }
 
-    curr = next;
-    bfs();
-    bfs();
-  };
+//     if (oldQueue.length === curr) {
+//       const oldVals = oldQueue.map(node => node.val);
 
-  bfs();
+//       result.push(oldVals);
+//       curr = next;
+//       next = 0;
+//       bfs();
+//       bfs();
+//       return;
+//     }
 
-  return result;
-};
+//     curr = next;
+//     bfs();
+//     bfs();
+//   };
+
+//   bfs();
+
+//   return result;
+// };
 
 const levelOrder = (root: TreeNode | null): number[][] => {
   const hashMap = new Map<number, number[]>();
 
   const bfs = (tree: TreeNode | null, level: number) => {
-    if (!tree) return [];
+    if (!tree) return;
 
     if (!hashMap.has(level)) {
       hashMap.set(level, [tree.val]);
