@@ -50,3 +50,30 @@ In breadth-first search (BFS) or level-order search, the search tree is broadene
 3. Recursively traverse the current node's right subtree.
 
 > In a binary search tree ordered such that in each node the key is greater than all keys in its left subtree and less than all keys in its right subtree, in-order traversal retrieves the keys in ascending sorted order.
+
+---
+
+### Morris Tree Traversal — The O(N) Time and O(1) Space Algorithm
+
+> https://medium.com/@mssandeepkamath/morris-tree-traversal-the-o-n-time-and-o-1-space-algorithm-5d2d2d47814a
+
+#### Morris in-order traversal using threading:
+
+A binary tree is threaded by making every left child pointer (that would otherwise be null) point to the in-order predecessor of the node (if it exists) and every right child pointer (that would otherwise be null) point to the in-order successor of the node (if it exists).
+
+##### Advantages:
+
+1. Avoids recursion, which uses a call stack and consumes memory and time.
+2. The node keeps a record of its parent.
+
+##### Disadvantages:
+
+1. The tree is more complex.
+2. We can make only one traversal at a time.
+3. It is more prone to errors when both the children are not present and both values of nodes point to their ancestors.
+
+##### Morris traversal is an implementation of in-order traversal that uses threading:
+
+1. Create links to the in-order successor.
+2. Print the data using these links.
+3. Revert the changes to restore original tree.
