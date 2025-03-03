@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import type { TreeNode } from "../../types.ts";
 import solution from "./solution.ts";
 
-describe("sort-colors", () => {
+describe("construct-binarytree-from-preorder-inorder", () => {
   it("should return correct answer", () => {
     // === 1 === //
 
