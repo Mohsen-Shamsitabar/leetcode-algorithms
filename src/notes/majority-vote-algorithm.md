@@ -11,7 +11,9 @@ This can be expressed in pseudocode as the following steps:
 - - else assign c = c − 1
 - Return m
 
-Even when the input sequence has no majority, the algorithm will report one of the sequence elements as its result. However, it is possible to perform a second pass over the same input sequence in order to count the number of times the reported element occurs and determine whether it is actually a majority. This second pass is needed, as it is not possible for a sublinear-space algorithm to determine whether there exists a majority element in a single pass through the input.[3]
+![img](https://upload.wikimedia.org/wikipedia/commons/c/c7/Boyer-Moore_MJRTY.svg)
+
+Even when the input sequence has no majority, the algorithm will report one of the sequence elements as its result. However, it is possible to perform a second pass over the same input sequence in order to count the number of times the reported element occurs and determine whether it is actually a majority. This second pass is needed, as it is not possible for a sublinear-space algorithm to determine whether there exists a majority element in a single pass through the input.
 
 ### Analysis
 
