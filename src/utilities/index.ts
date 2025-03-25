@@ -4,6 +4,7 @@ export { default as bubbleSort } from "./bubble-sort.ts";
 export { default as clamp } from "./clamp.ts";
 export { default as countPossibilities } from "./count-possibilites-of-picking-n-elements-from-m-element.ts";
 export { default as factorial } from "./factorial.ts";
+export { default as getGCD } from "./get-greatest-common-divisor.ts";
 export { default as heapSort } from "./heap-sort.ts";
 export { default as inLerp } from "./inLerp.ts";
 export { default as insertionSort } from "./insertion-sort.ts";
