@@ -65,3 +65,7 @@
 >
 
 - https://leetcode.com/problems/partition-array-according-to-given-pivot/description/
+
+>
+
+- https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/description/
