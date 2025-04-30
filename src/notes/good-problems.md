@@ -77,3 +77,7 @@
 >
 
 - https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/description/
+
+>
+
+- https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/
