@@ -13,5 +13,6 @@ export { default as lerp } from "./lerp.ts";
 export { default as mergeSort } from "./merge-sort.ts";
 export { default as quickSort } from "./quick-sort.ts";
 export { default as remap } from "./remap.ts";
+export { default as reverseArray } from "./reverse-array.ts";
 export { default as selectionSort } from "./selection-sort.ts";
 export { default as shellSort } from "./shell-sort.ts";
