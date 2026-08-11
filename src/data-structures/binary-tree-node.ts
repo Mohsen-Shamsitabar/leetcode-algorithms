@@ -18,4 +18,4 @@ class BinaryTreeNode<T> {
   }
 }
 
-export default BinaryTreeNode;
+export { BinaryTreeNode };

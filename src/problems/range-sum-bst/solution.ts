@@ -1,4 +1,4 @@
-import type { TreeNode } from "../../types.ts";
+import { type TreeNode } from "../../data-structures/tree-node.ts";
 
 const solution = (root: TreeNode, low: number, high: number): number => {
   let result = 0;

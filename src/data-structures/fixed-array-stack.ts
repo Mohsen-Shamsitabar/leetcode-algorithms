@@ -47,4 +47,4 @@ class FixedArrayStack<T> {
   }
 }
 
-export default FixedArrayStack;
+export { FixedArrayStack };

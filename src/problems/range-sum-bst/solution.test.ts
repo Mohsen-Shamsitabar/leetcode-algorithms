@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import type { TreeNode } from "../../types.ts";
+import { type TreeNode } from "../../data-structures/tree-node.ts";
 import solution from "./solution.ts";
 
 describe("range-sum-bst", () => {
