@@ -1,4 +1,4 @@
-import type { ListNode } from "../../types";
+import { type ListNode } from "../../data-structures/linked-list.ts";
 
 const solution = (head: ListNode | null): number => {
   const values: ListNode["val"][] = [];

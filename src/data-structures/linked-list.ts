@@ -1,12 +1,12 @@
-type NodeType<T> = Node<T> | null;
+type NodeType<T> = ListNode<T> | null;
 
-class Node<T> {
-  public value: T;
+class ListNode<T = number> {
+  public val: T;
   public next: NodeType<T>;
 
-  constructor({ next, value }: { value: T; next: NodeType<T> }) {
+  constructor({ next, val }: { val: T; next: NodeType<T> }) {
     this.next = next;
-    this.value = value;
+    this.val = val;
   }
 }
 
@@ -15,8 +15,8 @@ class LinkedList<T> {
   private tail: NodeType<T> = null;
   private length: number = 0;
 
-  private initiateList(value: T) {
-    const newNode = new Node({ value, next: null });
+  private initiateList(val: T) {
+    const newNode = new ListNode({ val, next: null });
 
     this.head = newNode;
     this.tail = newNode;
@@ -37,7 +37,7 @@ class LinkedList<T> {
     let node = this.head;
 
     while (node !== null) {
-      result.push(node.value);
+      result.push(node.val);
 
       node = node.next;
     }
@@ -61,34 +61,34 @@ class LinkedList<T> {
     return this.head === null || this.tail === null || this.length <= 0;
   }
 
-  public insertHead(value: T) {
+  public insertHead(val: T) {
     if (this.isEmpty()) {
-      this.initiateList(value);
+      this.initiateList(val);
       return;
     }
 
-    const newHead = new Node({ value, next: this.head });
+    const newHead = new ListNode({ val, next: this.head });
 
     this.head = newHead;
     this.length++;
   }
 
-  public insertTail(value: T) {
+  public insertTail(val: T) {
     if (this.isEmpty()) {
-      this.initiateList(value);
+      this.initiateList(val);
       return;
     }
 
-    const newTail = new Node({ value, next: null });
+    const newTail = new ListNode({ val, next: null });
 
     this.tail!.next = newTail;
     this.tail = newTail;
     this.length++;
   }
 
-  public insertAt(position: number, value: T) {
+  public insertAt(position: number, val: T) {
     if (this.isEmpty()) {
-      this.initiateList(value);
+      this.initiateList(val);
       return;
     }
 
@@ -115,18 +115,18 @@ class LinkedList<T> {
 
     const currentNode = prevNode!.next;
 
-    const newNode = new Node({ value, next: currentNode });
+    const newNode = new ListNode({ val, next: currentNode });
 
     prevNode!.next = newNode;
   }
 
-  public has(value: T) {
+  public has(val: T) {
     if (this.isEmpty()) return false;
 
     let node = this.head;
 
     while (node !== null) {
-      if (node.value === value) {
+      if (node.val === val) {
         return true;
       }
 
@@ -136,9 +136,9 @@ class LinkedList<T> {
     return false;
   }
 
-  // public delete(value: T) {
+  // public delete(val: T) {
   //   if (this.isEmpty()) return;
   // }
 }
 
-export { LinkedList };
+export { LinkedList, ListNode };
