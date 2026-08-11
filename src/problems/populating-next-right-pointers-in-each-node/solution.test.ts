@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import type { _Node } from "../../types.ts";
 import solution from "./solution.ts";
+import { type _Node } from "./types.ts";
 
 describe("populating-next-right-pointers-in-each-node", () => {
   it("should return correct answer", () => {

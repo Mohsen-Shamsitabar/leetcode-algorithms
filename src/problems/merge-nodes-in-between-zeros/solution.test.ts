@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import type { ListNode } from "../../types.ts";
+import { type ListNode } from "../../data-structures/linked-list.ts";
 import solution from "./solution.ts";
 
 describe("merge-nodes-in-between-zeros", () => {

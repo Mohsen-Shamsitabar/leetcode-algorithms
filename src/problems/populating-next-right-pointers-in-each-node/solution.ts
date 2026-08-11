@@ -1,4 +1,4 @@
-import type { _Node } from "../../types.ts";
+import { type _Node } from "./types.ts";
 
 type QueueItem = [_Node, number];
 

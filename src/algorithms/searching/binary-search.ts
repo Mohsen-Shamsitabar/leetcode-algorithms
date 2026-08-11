@@ -34,7 +34,7 @@ const iterativeBinarySearch = <T>(nums: T[], target: T): number => {
   return -1;
 };
 
-const recursiveBinarySearch = <T>(nums: T[], target: T): number => {
+const _recursiveBinarySearch = <T>(nums: T[], target: T): number => {
   if (nums.length === 0) return -1;
   if (nums.length === 1) return nums[0] === target ? 0 : -1;
 

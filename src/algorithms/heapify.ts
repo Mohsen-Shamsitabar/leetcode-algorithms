@@ -10,7 +10,7 @@ const getLeftChildIdxV1 = (i: number, j: number): number => 2 * (i - j) + 1 + j;
  * Time = **`O(n^2)`**
  * Space = **`O(1)`**
  */
-const heapifyV1 = (arr: number[]): void => {
+const _heapifyV1 = (arr: number[]): void => {
   for (let j = 0; j < arr.length; j++) {
     for (let i = arr.length - 1; i >= j; i--) {
       const leftChildIdx = getLeftChildIdxV1(i, j);

@@ -1,4 +1,4 @@
-import type { TreeNode } from "../../types";
+import { type TreeNode } from "../../data-structures/tree-node.ts";
 
 const solution = (
   root1: TreeNode | null,

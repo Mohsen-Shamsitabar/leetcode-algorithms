@@ -1,11 +1,14 @@
 import { describe, expect, it } from "vitest";
 import solution from "./solution.ts";
+import { type Operation } from "./types.ts";
 
 describe("final-value-after-operations", () => {
   it("should return correct answer", () => {
     // === 1 === //
 
-    let [opers, answer] = [["--X", "X++", "X++"], 1];
+    let opers: Operation[] = ["--X", "X++", "X++"];
+
+    let answer = 1;
 
     expect(solution(opers)).toBe(answer);
     // === 2 === //

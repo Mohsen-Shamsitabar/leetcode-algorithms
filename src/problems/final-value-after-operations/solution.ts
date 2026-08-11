@@ -1,4 +1,4 @@
-type Operation = "--X" | "X--" | "++X" | "X++";
+import { type Operation } from "./types.ts";
 
 /**
  * Time = **`O(n)`**

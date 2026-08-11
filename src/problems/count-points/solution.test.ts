@@ -4,21 +4,20 @@ import solution from "./solution.ts";
 describe("count-points", () => {
   it("should return correct answer", () => {
     // === 1 === //
-
-    let [points, queries, answer] = [
-      [
-        [1, 3],
-        [3, 3],
-        [5, 3],
-        [2, 2]
-      ],
-      [
-        [2, 3, 1],
-        [4, 3, 1],
-        [1, 1, 2]
-      ],
-      [3, 2, 2]
+    let points: [number, number][] = [
+      [1, 3],
+      [3, 3],
+      [5, 3],
+      [2, 2]
     ];
+
+    let queries: [number, number, number][] = [
+      [2, 3, 1],
+      [4, 3, 1],
+      [1, 1, 2]
+    ];
+
+    let answer = [3, 2, 2];
 
     expect(solution(points, queries)).toEqual(answer);
 

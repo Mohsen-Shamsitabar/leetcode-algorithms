@@ -1,4 +1,4 @@
-import type { ListNode } from "../../types.ts";
+import { type ListNode } from "../../data-structures/linked-list.ts";
 
 /**
  * Time = Space = **`O(n)`**

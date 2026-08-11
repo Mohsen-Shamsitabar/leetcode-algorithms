@@ -93,17 +93,17 @@ class LinkedList<T> {
     }
 
     if (position === 1) {
-      console.warn("Cannot place as a head node, use `insertHead` instead!");
+      // console.warn("Cannot place as a head node, use `insertHead` instead!");
       return;
     }
 
     if (position <= 0) {
-      console.warn("Invalid Position!");
+      // console.warn("Invalid Position!");
       return;
     }
 
     if (position > this.length) {
-      console.warn("Invalid Position!");
+      // console.warn("Invalid Position!");
       return;
     }
 

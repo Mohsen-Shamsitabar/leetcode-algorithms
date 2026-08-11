@@ -1,4 +1,4 @@
-import type { ListNode } from "../../types.ts";
+import { type ListNode } from "../../data-structures/linked-list.ts";
 import getGCD from "../../utilities/get-greatest-common-divisor.ts";
 
 const solution = (head: ListNode): ListNode => {

@@ -1,4 +1,4 @@
-import type BinaryTreeNode from "../../data-structures/binary-tree-node";
+import { type BinaryTreeNode } from "../../data-structures/binary-tree-node.ts";
 
 const iterativeDfs = <T>(root: BinaryTreeNode<T>): T[] => {
   if (!root.left && !root.right) return [root.value];
@@ -19,7 +19,7 @@ const iterativeDfs = <T>(root: BinaryTreeNode<T>): T[] => {
   return result;
 };
 
-const recursiveDfs = <T>(root: BinaryTreeNode<T>): T[] => {
+const _recursiveDfs = <T>(root: BinaryTreeNode<T>): T[] => {
   if (!root.left && !root.right) return [root.value];
 
   const result: T[] = [];

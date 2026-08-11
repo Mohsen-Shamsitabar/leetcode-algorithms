@@ -1,4 +1,4 @@
-import { countPossibilities } from "../../utilities/index.ts";
+import countPossibilities from "../../utilities/count-possibilites-of-picking-n-elements-from-m-element.ts";
 
 /**
  * *`O(N^2)`*.

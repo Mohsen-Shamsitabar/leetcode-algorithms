@@ -1,4 +1,4 @@
-import type BinaryTreeNode from "../../data-structures/binary-tree-node.ts";
+import { type BinaryTreeNode } from "../../data-structures/binary-tree-node.ts";
 
 const bfs = <T>(root: BinaryTreeNode<T>): T[] => {
   if (!root.left && !root.right) return [root.value];

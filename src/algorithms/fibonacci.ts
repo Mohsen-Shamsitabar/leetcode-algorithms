@@ -2,18 +2,18 @@
  * Time = **`O(2^n)`**
  * Space = **`O(n)`**
  */
-const recursiveFibonacci = (n: number): number => {
+const _recursiveFibonacci = (n: number): number => {
   if (n === 1) return 0;
   if (n === 2) return 1;
 
-  return recursiveFibonacci(n - 1) + recursiveFibonacci(n - 2);
+  return _recursiveFibonacci(n - 1) + _recursiveFibonacci(n - 2);
 };
 
 /**
  * Time = **`O(n)`**
  * Space = **`O(n)`**
  */
-const memoizedFibonacci = (n: number) => {
+const _memoizedFibonacci = (n: number) => {
   const fiboMap = new Map<number, number>([
     [1, 0],
     [2, 1]
